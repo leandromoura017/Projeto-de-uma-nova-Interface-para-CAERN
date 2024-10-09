@@ -1,0 +1,1 @@
+Esse projeto foi feito para a matéria de "Projeto de Interface do Usuário". O intuído era achar sites muito ruins e melhorar eles para o conforto dos usuários, com links, menus, conteúdos muito mais intuitivo para o usuário. Fazendo-o que não perca tempo procurando o que deseja, além de ficar muito mais apresentado visualmente.
