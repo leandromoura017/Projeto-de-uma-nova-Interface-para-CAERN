@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
+    <title>Consulte as suas Faturas</title>
+</head>
+
+<body>
+    <!-- Menu azul da CAERN -->
+
+    <nav class="navbar navbar-expand-lg border-bottom border-body" style="background-color: #014C94;"
+        data-bs-theme="light">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <a class="navbar-brand" href="#">
+                    <img src="img/caern.png" alt="" width="100">
+                </a>
+                <p class="text-light" style="font-size: 10px; margin-top: 5px; margin-bottom: 0; padding-bottom: 0;">
+                    Unidade
+                    de <br> <b> Atendimento</b> <br> <b>Virtual</b> </p>
+                <button class="navbar-toggler btn-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 " type="search" placeholder="Procurar..." aria-label="Search">
+                        <button class="btn btn-light" type="button" style="color:#03024B"><b>Login</b></button>
+                    </form>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seleção -->
+
+    <div class="container text-center">
+        <div class="row mt-4 align-items-center">
+            <div class="col-3">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Seu serviço de água
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Alteração de vencimentos</a></li>
+                                    <li><a class="dropdown-item" href="#">Contestação de contas</a></li>
+                                    <li><a class="dropdown-item" href="#">Consultar pagamentos</a></li>
+                                    <li><a class="dropdown-item" href="#">Histórico de consumo</a></li>
+                                    <li><a class="dropdown-item" href="#">Sua fatura </a></li>
+                                    <li><a class="dropdown-item" href="#">Transferência de Responsabilidae</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    A água da sua cidade
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Como a água é gerenciada</a></li>
+                                    <li><a class="dropdown-item" href="#">Esgoto</a></li>
+                                    <li><a class="dropdown-item" href="qualidade_da_agua.html">Qualidade da água</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Mais Serviços
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Conta em Braille</a></li>
+                                    <li><a class="dropdown-item" href="#">Conheça seus direitos e deveres</a></li>
+                                    <li><a class="dropdown-item" href="#">Comitê de conduta, ética e integridade</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Tarifa social e popular</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Contatos
+                                </a>
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Endereço de localização -->
+
+    <div class="container text-center">
+        <div class="text-start mt-3">
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="index.html" style="color: #03024B;">
+                Página Inicial
+            </a>
+            <span style="color: #03024B;"> / </span>
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#" style="color: #03024B;">
+                Consulte as suas Faturas
+            </a>
+        </div>
+
+        <!-- Descrição da página (NOME AZUL EM CIMA DA LINHA) -->
+
+        <h3 class="text-start mt-4" style="color: #03024B;">Consulte as suas Faturas</h3>
+
+        <!-- Linha azul em baixo do nome -->
+
+        <hr class="mt-2 border-2 opacity-50" style="color: #014C94;">
+
+    </div>
+
+    <!-- Menu lateral -->
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="accordion accordion-flush my-5" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="btn accordion-button active " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Sua conta e consumo
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="text-start list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-primary active" aria-current="true"><a
+                                            class="dropdown-item" href="#">Consulte as suas
+                                            faturas</a></li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Entenda sua fatura</a>
+                                    </li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Taxas de
+                                            abastecimento</a></li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Fatura digital</a>
+                                    </li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="pagar_contas.html">Pagar
+                                            Contas</a>
+                                    </li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Insira a leitura do
+                                            medidor</a></li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Teleleitura</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Seu contato
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="text-start list-group list-group-flush">
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Item #1</a></li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Item #2</a></li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Item #3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Água e informações sobre sua área
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="text-start list-group list-group-flush">
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Como a água é
+                                            gerenciada</a></li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Esgoto</a></li>
+                                    <li class="list-group-item"><a class="dropdown-item"
+                                            href="qualidade_da_agua.html">Qualidade da Água</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                Bônus
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="text-start list-group list-group-flush">
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Item #1</a></li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Item #2</a></li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Item #3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                Incidentes e reclamações
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="text-start list-group list-group-flush">
+                                    <li class="list-group-item"><a class="dropdown-item"
+                                            href="obras_em_andamento.html">Obras em Andamento</a>
+                                    </li>
+                                    <li class="list-group-item"><a class="dropdown-item"
+                                            href="reclamacoes_e_segestoes.html">Faça uma
+                                            Reclamação</a></li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Advogado do Cliente -
+                                            Defesa do Cliente</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                Regulamentos
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="text-start list-group list-group-flush">
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Item #1</a></li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Item #2</a></li>
+                                    <li class="list-group-item"><a class="dropdown-item" href="#">Item #3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <p class="fs-4 mt-2" style="color: #03024B;">A partir da Área de Cliente poderá consultar facilmente o
+                    histórico de faturas emitidas, bem como utilizar a pesquisa avançada para encontrar a fatura que
+                    precisa.</p>
+
+                <img src="img/fundo_consultar.png" class="img-fluid" alt="...">
+
+                <div class="col-12">
+                    <div class="div_pagar_contas_lembre_se mt-5">
+                        <p class="col-6 fs-5 ms-4 mt-4" style="color:#03024B;">Se quiser consultar a sua fatura,<b
+                                class="text-info">
+                                registre-se</b> ou entre na sua <b class="text-info"> área do cliente</b> </p>
+
+                        <div class="d-md-flex mb-5 justify-content-md-end">
+                            <button class="btn btn-info me-5 btn-lg" type="button">Acessar</button>
+                            <button class="btn btn-info me-5 btn-lg" type="button">Cadastrar-se</button>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="fs-4 mt-4" style="color: #03024B;">Você pode estar interessado</p>
+                <div class="text-center">
+
+
+                </div>
+                <div class="container text-center">
+
+                    <div class="row justify-content-evenly mt-4">
+                        <div class="col-4 text-center">
+                            <a href="#">
+                                <figure class="figure">
+                                    <img src="img/card_consul1.jpg" class="figure-img img-fluid rounded" alt="..."
+                                        width="200">
+                                    <figcaption class="figure-caption px-1 py-2 text-light bg-info text-center"
+                                        style="border-radius: 10px;"><b>Gerencie seu fornercimento on-line</b>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a href="#">
+                                <figure class="figure">
+                                    <img src="img/card_consul2.jpg" class="figure-img img-fluid rounded" alt="..."
+                                        width="200">
+                                    <figcaption class="figure-caption px-1 py-2 text-light bg-info text-center"
+                                        style="border-radius: 10px;"><b>Chaves para o sistema de seções de consumo de
+                                            água</b>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a href="#">
+                                <figure class="figure">
+                                    <img src="img/card_consul3.jpg" class="figure-img img-fluid rounded" alt="..."
+                                        width="200">
+                                    <figcaption class="figure-caption px-1 py-2 text-light bg-info text-center"
+                                        style="border-radius: 10px;"><b>Quanto você paga na sua conta de água?</b>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+
+    <div class="blockcode">
+        <footer class="page-footer shadow mt-5" style="background-color: #014C94;color:#fff">
+            <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="col-3">
+                        <p>
+                            <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href="#">
+                                Aviso legal
+                            </a>
+                        </p>
+                        <p>
+                            <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href="#">
+                                politica de cookies
+                            </a>
+                        </p>
+                        <p>
+                            <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href="#">
+                                contato
+                            </a>
+                        </p>
+                        <p>
+                            <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href="#">
+                                Canal Ético
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <p>
+                            <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href="#">
+                                Politicas de privacidade
+                            </a>
+                        </p>
+                        <p>
+                            <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href="#">
+                                Politica de cookies Área do Cliente
+                            </a>
+                        </p>
+                        <p>
+                            <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href="#">
+                                mapa da web
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <p class="text-end me-4">
+                            <img src="img/caern.png" alt="" width="160">
+                        </p>
+                    </div>
+                    <div class="col-1">
+                        <div class="d-flex" style="height: 200px;">
+                            <div class="vr"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="text-start my-4">
+
+                            <i class="bi bi-facebook me-2" style="font-size: 2rem;"></i>
+
+                            <i class="bi bi-instagram me-2" style="font-size: 2rem;"></i>
+
+                            <i class="bi bi-apple me-2" style="font-size: 2rem;"></i>
+
+                            <i class="bi bi-android2" style="font-size: 2rem;"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <small>&copy; Leandro Moura e Renan Avelino, 2023. Todos os direitos reservados.</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
