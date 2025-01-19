@@ -19,4 +19,8 @@ Aqui está o exemplo de apenas duas páginas do antes e depois. Essas são apena
 
 ### Página de Pagar Contas ANTES:
 
+![Image](https://github.com/user-attachments/assets/1194811b-e825-40c9-9898-0ffe70e24a89)
+
 ### Página de Pagar Contas DEPOIS:
+
+![Image](https://github.com/user-attachments/assets/91ce7d1c-25ea-4b8d-9fb7-68a86e4ab821)
